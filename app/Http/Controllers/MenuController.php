@@ -15,6 +15,7 @@ class MenuController extends Controller
     public function index()
     {
         return view('/admin/menu/index', [
+            'active' => 'Index',
             'dataMenu' => Menu::all()
         ]);
     }
@@ -26,12 +27,14 @@ class MenuController extends Controller
      */
     public function add()
     {
-        return view('/admin/menu/add');
+        return view('/admin/menu/add', [
+            'active' => 'Add',
+        ]);
     }
 
     /**
      * Store a newly created resource in storage.
-     *
+     *`
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/blog', [HomeController::class, 'blog']);
 
 Route::prefix('admin')->group(function(){
-    Route::get('/', [HomeController::class, 'dashboard']);
+    Route::get('/', [AdminController::class, 'dashboard']);
     Route::prefix('menu')->group(function(){
         Route::get('/', [MenuController::class, 'index']);
         Route::get('/index', [MenuController::class, 'index']);

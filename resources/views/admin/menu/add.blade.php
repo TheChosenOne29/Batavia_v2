@@ -1,8 +1,10 @@
 @extends('layouts.dash')
 
-@section('dash')
+@section('active')
+    Add Menu Item
+@endsection
 
-<h1>Tambah Data</h1>
+@section('dash')
 
 <div class="col-lg-5">
     <form action="/admin/menu/store" method="POST">
