@@ -14,7 +14,9 @@ class MenuController extends Controller
      */
     public function index()
     {
-        //
+        return view('/admin/menu/index', [
+            'dataMenu' => Menu::all()
+        ]);
     }
 
     /**
@@ -22,9 +24,9 @@ class MenuController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function add()
     {
-        //
+        return view('/admin/menu/add');
     }
 
     /**
@@ -35,7 +37,14 @@ class MenuController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Menu::create([
+            'name' => $request -> name,
+            'price' => $request -> price,
+            'category' => $request -> category,
+            'desc' => $request -> desc
+        ]);
+        
+        return redirect('/admin/menu/add');
     }
 
     /**
@@ -55,9 +64,11 @@ class MenuController extends Controller
      * @param  \App\Models\Menu  $menu
      * @return \Illuminate\Http\Response
      */
-    public function edit(Menu $menu)
+    public function edit($id)
     {
-        //
+        return view('/admin/menu/edit', [
+            'data_menu' => Menu::find($id)
+        ]);
     }
 
     /**
@@ -69,7 +80,14 @@ class MenuController extends Controller
      */
     public function update(Request $request, Menu $menu)
     {
-        //
+        $menu->update([
+            'name' => $request -> name,
+            'price' => $request -> price,
+            'category' => $request -> category,
+            'desc' => $request -> desc
+        ]);
+
+        return redirect('/admin/menu/');
     }
 
     /**
@@ -78,8 +96,10 @@ class MenuController extends Controller
      * @param  \App\Models\Menu  $menu
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Menu $menu)
+    public function erase($id)
     {
-        //
+        Menu::destroy($id);
+
+        return redirect('/admin/menu/index');
     }
 }
