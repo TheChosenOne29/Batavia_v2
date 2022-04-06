@@ -91,6 +91,36 @@
             </a>
           </li>
         </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Reservation Database</span>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link @if ($active === '') active @endif" href="/admin/reservation/add">
+              <span data-feather="file-text"></span>
+              Add reservation item
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link @if ($active === '') active @endif" href="/admin/reservation/index">
+              <span data-feather="file-text"></span>
+              Show all item
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Table availability
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Calendar
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
