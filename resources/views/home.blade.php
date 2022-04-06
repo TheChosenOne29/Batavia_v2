@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Restaurant HTML Template</title>
+		<title>Restaurant Batavia</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
@@ -90,8 +90,8 @@
 
 					<!-- contact nav -->
 					<ul class="contact-nav nav navbar-nav">
-						<li><a href="tel:0455481497"><i class="fa fa-phone"></i> 045-548-14-97</a></li>
-						<li><a href="#"><i class="fa fa-map-marker"></i> 3685 Granville Lane</a></li>
+						<li><a href="tel:0455481497"><i class="fa fa-phone"></i> +84 24 3938 2525</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i> 116 P. Ngọc Hà, Ngọc Hồ, Ba Đình, Hà Nội, Vietnam</a></li>
 					</ul>
 					<!-- contact nav -->
 
@@ -115,8 +115,8 @@
 
 				<div class="col-md-10 col-md-offset-1 text-center">
 					<div class="home-content">
-						<h1 class="white-text">Welcome To Risotto Restaurant</h1>
-						<h4 class="white-text lead">Nec solet elaboraret eu, ea usu vidit accusam. Ea per legimus singulis percipitur. Graecis ullamcorper nec ex, vix euismod detraxit voluptaria at.</h4>
+						<h1 class="white-text">Welcome To Batavia Restaurant & Cafe</h1>
+						<h4 class="white-text lead">An authentic Indonesian, Malay, Oriental cuisine with Halal certification.</h4>
 						<a href="index.html#menu"><button class="main-button">Discover Menu</button></a>
 					</div>
 				</div>
@@ -138,19 +138,19 @@
 					<!-- section header -->
 					<div class="section-header text-center">
 						<h4 class="sub-title">About Us</h4>
-						<h2 class="title">The Risotto Restaurant</h2>
+						<h2 class="title">Batavia Restaurant & Cafe</h2>
 					</div>
 					<!-- /section header -->
 
 					<!-- about content -->
 					<div class="col-md-5">
-						<h4 class="lead">Welcome to Risotto Restaurant. Since 1988, Offering Traditional Dishes of the highest quality.</h4>
+						<h4 class="lead">Welcome to Batavia Restaurant & Cafe. Since ....</h4>
 					</div>
 					<!-- /about content -->
 
 					<!-- about content -->
 					<div class="col-md-7">
-						<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum. Oblique conclusionemque qui cu, eum no sonet putant. Eos cu nulla vidisse. Mazim oporteat eam ex, his ei audiam audire, affert corrumpit pri cu.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. </p>
 					</div>
 					<!-- /about content -->
 
@@ -453,31 +453,31 @@
 							<ul>
 								<li>
 									<h4 class="day">Sunday</h4>
-									<h4 class="hours">8:00 am – 11:00 pm</h4>
+									<h4 class="hours">10:00 am – 09:00 pm</h4>
 								</li>
 								<li>
 									<h4 class="day">Monday</h4>
-									<h4 class="hours">8:00 am – 11:00 pm</h4>
+									<h4 class="hours">10:00 am – 09:00 pm</h4>
 								</li>
 								<li>
 									<h4 class="day">Tuesday</h4>
-									<h4 class="hours">8:00 am – 11:00 pm</h4>
+									<h4 class="hours">10:00 am – 09:00 pm</h4>
 								</li>
 								<li>
 									<h4 class="day">Wednesday</h4>
-									<h4 class="hours">8:00 am – 11:00 pm</h4>
+									<h4 class="hours">10:00 am – 09:00 pm</h4>
 								</li>
 								<li>
 									<h4 class="day">Thursday</h4>
-									<h4 class="hours">8:00 am – 11:00 pm</h4>
+									<h4 class="hours">10:00 am – 09:00 pm</h4>
 								</li>
 								<li>
 									<h4 class="day">Friday</h4>
-									<h4 class="hours">Closed</h4>
+									<h4 class="hours">10:00 am – 09:00 pm</h4>
 								</li>
 								<li>
 									<h4 class="day">Saturday</h4>
-									<h4 class="hours">Closed</h4>
+									<h4 class="hours">10:00 am – 09:00 pm</h4>
 								</li>
 							</ul>
 						</div>
