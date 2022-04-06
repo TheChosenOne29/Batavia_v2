@@ -72,13 +72,13 @@
 
 					<!-- nav -->
 					<ul class="main-nav nav navbar-nav">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#menu">Menu</a></li>
-						<li><a href="#reservation">Reservation</a></li>
+						<li><a href="/#home">Home</a></li>
+						<li><a href="/#about">About</a></li>
+						<li><a href="/#menu">Menu</a></li>
+						<li><a href="/#reservation">Reservation</a></li>
 						<!-- <li><a href="index.html#gallery">Gallery</a></li> -->
-						<li><a href="index.html#events">Events</a></li>
-						<li><a href="index.html#contact">Contact</a></li>
+						<li><a href="/blog">Events</a></li>
+						<li><a href="/#contact">Contact</a></li>
 					</ul>
 					<!-- /nav -->
 
@@ -126,12 +126,12 @@
 					<!-- footer nav -->
 					<div class="col-md-6">
 						<nav class="footer-nav">
-							<a href="index.html">Home</a>
-							<a href="index.html#about">About</a>
-							<a href="index.html#menu">Menu</a>
-							<a href="index.html#reservation">Reservation</a>
-							<a href="index.html#events">Events</a>
-							<a href="index.html#contact">Contact</a>
+							<a href="/">Home</a>
+							<a href="/#about">About</a>
+							<a href="/#menu">Menu</a>
+							<a href="/#reservation">Reservation</a>
+							<a href="/#events">Events</a>
+							<a href="/#contact">Contact</a>
 						</nav>
 					</div>
 					<!-- /footer nav -->
