@@ -505,8 +505,8 @@
 				<div class="contact-content">
 					<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
 					<h3>Tel: <a href="#">045-548-14-97</a></h3>
-					<p>Address: 3685 Granville Lane</p>
-					<p>Email: <a href="#">Risotto@email.com</a></p>
+					<p>Address: 116 P. Ngọc Hà, Ngọc Hồ, Ba Đình, Hà Nội, Vietnam</p>
+					<p>Email: <a href="#">Batavia@email.com</a></p>
 					<ul class="list-inline">
 						<li><p>Follow Us:</p></li>
 						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
