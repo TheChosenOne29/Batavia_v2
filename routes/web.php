@@ -17,3 +17,5 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/blog', [HomeController::class, 'blog']);
+
+Route::get('/dashboard', [HomeController::class, 'dashboard']);

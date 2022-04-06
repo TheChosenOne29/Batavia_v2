@@ -15,4 +15,9 @@ class HomeController extends Controller
     {
         return view('blog');
     }
+
+    public function dashboard()
+    {
+        return view('admin.dashboard');
+    }
 }
