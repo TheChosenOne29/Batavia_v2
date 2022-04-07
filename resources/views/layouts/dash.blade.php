@@ -97,13 +97,13 @@
         </h6>
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
-            <a class="nav-link @if ($active === '') active @endif" href="/admin/reservation/add">
+            <a class="nav-link @if ($active === 'Add2') active @endif" href="/admin/reservation/add">
               <span data-feather="file-text"></span>
               Add reservation item
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link @if ($active === '') active @endif" href="/admin/reservation/index">
+            <a class="nav-link @if ($active === 'Index2') active @endif" href="/admin/reservation/index">
               <span data-feather="file-text"></span>
               Show all item
             </a>

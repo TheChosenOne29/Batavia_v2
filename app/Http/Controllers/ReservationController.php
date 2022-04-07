@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Reservation;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class ReservationController extends Controller
 {
@@ -14,7 +15,10 @@ class ReservationController extends Controller
      */
     public function index()
     {
-        //
+        return view('/admin/reservation/index', [
+            'active' => 'Index2',
+            'dataReservation' => Reservation::all()
+        ]);
     }
 
     /**
@@ -22,9 +26,11 @@ class ReservationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function add()
     {
-        //
+        return view('/admin/reservation/add', [
+            'active' => 'Add2',
+        ]);
     }
 
     /**
@@ -35,7 +41,16 @@ class ReservationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Reservation::create([
+            'name' => $request -> name,
+            'email' => $request -> email,
+            'phone' => $request -> phone,
+            'guest' => $request -> guest,
+            'date' => $request -> date,
+            'time' => $request -> time
+        ]);
+        
+        return redirect('/admin/reservation/add');
     }
 
     /**

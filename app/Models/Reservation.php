@@ -13,8 +13,7 @@ class Reservation extends Model
         'name',
         'email',
         'phone',
-        'jumlah_orang',
-        'number_of_guest',
+        'guest',
         'date',
         'time'
     ];

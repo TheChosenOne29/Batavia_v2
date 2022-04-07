@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->integer('phone');
-            $table->integer('number_of_guest');
+            $table->integer('guest');
             $table->date('date');
             $table->time('time');
         });
