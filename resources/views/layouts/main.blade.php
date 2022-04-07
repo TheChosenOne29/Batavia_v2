@@ -84,7 +84,7 @@
 
 					<!-- button nav -->
 					<ul class="cta-nav">
-						<li><a href="index.html#reservation" class="main-button">Reserve</a></li>
+						<li><a href="#reservation" class="main-button">Reserve</a></li>
 					</ul>
 					<!-- button nav -->
 
