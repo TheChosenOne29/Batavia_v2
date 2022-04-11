@@ -1,10 +1,7 @@
 @extends('layouts.dash')
 
-@section('active')
-    Show All Reservation Item
-@endsection
-
 @section('dash')
+<h1 class="mt-4">All item</h1>
 
 <div class="table-responsive">
   <table class="table table-striped table-sm">

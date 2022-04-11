@@ -1,10 +1,7 @@
 @extends('layouts.dash')
 
-@section('active')
-    Add Reservation Item
-@endsection
-
 @section('dash')
+<h1 class="mt-4">Add item</h1>
 
 <div class="col-lg-5">
     <form action="/admin/reservation/store" method="POST">

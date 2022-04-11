@@ -1,10 +1,7 @@
 @extends('layouts.dash')
 
-@section('active')
-    Update Menu Item
-@endsection
-
 @section('dash')
+<h1 class="mt-4">Update item {{ $data_menu->name }}</h1>
 
 <div class="col-lg-5">
     <form action="/admin/menu/update" method="POST">
