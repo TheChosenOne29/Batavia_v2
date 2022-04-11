@@ -19,6 +19,7 @@ use App\Http\Controllers\ReservationController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/blog', [HomeController::class, 'blog']);
+Route::get('/login', [HomeController::class, 'login']);
 
 Route::prefix('admin')->group(function(){
     Route::get('/', [AdminController::class, 'dashboard']);

@@ -24,6 +24,10 @@
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 
+		{{-- Login Bootstrap --}}
+
+
+
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -84,7 +88,7 @@
 
 					<!-- button nav -->
 					<ul class="cta-nav">
-						<li><a href="#reservation" class="main-button">Reserve</a></li>
+						<li><a href="#reservation" class="main-button">Login</a></li>
 					</ul>
 					<!-- button nav -->
 
