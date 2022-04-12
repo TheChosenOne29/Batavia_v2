@@ -13,7 +13,8 @@
 
 			<!-- reservation form -->
 			<div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1">
-				<form class="reserve-form row">
+				<form action="/reservation/store" method="POST" class="reserve-form row" >
+					@csrf
 					<div class="section-header text-center">
 						<h4 class="sub-title">Reservation</h4>
 						<h2 class="title white-text">Book Your Table</h2>
@@ -22,42 +23,42 @@
 					<div class="col-md-6">
 						<div class="form-group">
 							<label for="name">Name:</label>
-							<input class="input" type="text" placeholder="Name" id="name">
+							<input class="input" type="text" placeholder="Name" id="name" name="name">
 						</div>
 						<div class="form-group">
 							<label for="phone">Phone:</label>
-							<input class="input" type="tel" placeholder="Phone" id="phone">
+							<input class="input" type="tel" placeholder="Phone" id="phone" name="phone">
 						</div>
 						<div class="form-group">
 							<label for="date">Date:</label>
-							<input class="input" type="text" placeholder="MM/DD/YYYY" id="date">
+							<input class="input" type="date" placeholder="DD/MM/YYYY" id="date" name="date">
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="form-group">
 							<label for="email">Email:</label>
-							<input class="input" type="email" placeholder="Email" id="email">
+							<input class="input" type="email" placeholder="Email" id="email" name="email">
 						</div>
 						<div class="form-group">
 							<label for="number">Number of Guests:</label>
-							<select class="input" id="number">
-								<option>1 Person</option>
-								<option>2 People</option>
-								<option>3 People</option>
-								<option>4 People</option>
-								<option>5 People</option>
-								<option>6 People</option>
+							<select class="input" id="number" name="guest">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
 							</select>
 						</div>
 						<div class="form-group">
 							<label for="time">Time:</label>
-							<input class="input" type="text" placeholder="HH:MM" id="time">
+							<input class="input" type="time" placeholder="HH:MM" id="time" name="time">
 						</div>
 					</div>
 
 					<div class="col-md-12 text-center">
-						<button class="main-button">Book Now</button>
+						<button type="submit" class="main-button">Book Now</button>
 					</div>
 
 				</form>

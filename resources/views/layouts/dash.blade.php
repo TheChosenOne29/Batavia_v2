@@ -69,8 +69,8 @@
                             </a>
                             <div class="collapse" id="collapseReservation" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="/admin/menu/add">Add data</a>
-                                    <a class="nav-link" href="/admin/menu/index">View all data</a>
+                                    <a class="nav-link" href="/admin/reservation/add">Add data</a>
+                                    <a class="nav-link" href="/admin/reservation/index">View all data</a>
                                 </nav>
                             </div>
 

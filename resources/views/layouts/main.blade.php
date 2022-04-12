@@ -88,8 +88,15 @@
 
 					<!-- button nav -->
 					<ul class="cta-nav">
-						<li><a href="#reservation" class="main-button">Login</a></li>
-					</ul>
+						@if (auth()->user())
+						<form action="/logout" method="POST">
+							@csrf
+							<li><button class="main-button">Logout</button></li>
+						</form>
+						@else
+						<li><a href="/login" class="main-button">Login</a></li>
+						@endif
+						</ul>
 					<!-- button nav -->
 
 					<!-- contact nav -->

@@ -25,13 +25,14 @@
 			      			<h3 class="mb-4">Sign In</h3>
 			      		</div>
 			      	</div>
-							<form action="#" class="signin-form">
+							<form action="/login" class="signin-form" method="POST">
+								@csrf
 			      		<div class="form-group mt-3">
-			      			<input type="text" class="form-control" required>
+			      			<input type="text" class="form-control" required name="email">
 			      			<label class="form-control-placeholder" for="username">Username</label>
 			      		</div>
 		            <div class="form-group">
-		              <input id="password-field" type="password" class="form-control" required>
+		              <input id="password-field" type="password" class="form-control" required name="password">
 		              <label class="form-control-placeholder" for="password">Password</label>
 		              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 		            </div>

@@ -50,7 +50,21 @@ class ReservationController extends Controller
             'time' => $request -> time
         ]);
         
-        return redirect('/admin/reservation/add');
+        return redirect('/admin/reservation/index');
+    }
+
+    public function userstore(Request $request)
+    {
+        Reservation::create([
+            'name' => $request -> name,
+            'email' => $request -> email,
+            'phone' => $request -> phone,
+            'guest' => $request -> guest,
+            'date' => $request -> date,
+            'time' => $request -> time
+        ]);
+        
+        return redirect('/#reservation');
     }
 
     /**
@@ -93,8 +107,10 @@ class ReservationController extends Controller
      * @param  \App\Models\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Reservation $reservation)
+    public function erase($id)
     {
-        //
+        Reservation::destroy($id);
+
+        return redirect('/admin/reservation/index');
     }
 }

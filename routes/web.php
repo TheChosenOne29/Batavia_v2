@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ReservationController;
 
@@ -19,7 +20,13 @@ use App\Http\Controllers\ReservationController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/blog', [HomeController::class, 'blog']);
-Route::get('/login', [HomeController::class, 'login']);
+
+Route::get('/login', [UserController::class, 'index'])->name('login');
+Route::post('/login', [UserController::class, 'auth']);
+
+Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
+
+Route::post('/reservation/store', [ReservationController::class, 'userstore'])->middleware('auth');
 
 Route::prefix('admin')->group(function(){
     Route::get('/', [AdminController::class, 'dashboard']);

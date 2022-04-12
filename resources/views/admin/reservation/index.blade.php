@@ -6,7 +6,7 @@
 <div class="table-responsive">
   <table class="table table-striped table-sm">
       <thead>
-        <tr>Í
+        <tr>
           <th scope="col">Name</th>
           <th scope="col">E-mail</th>
           <th scope="col">Phone</th>
