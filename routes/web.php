@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EventsController;
 use App\Http\Controllers\ReservationController;
 
 /*
@@ -47,5 +48,14 @@ Route::prefix('admin')->group(function(){
         Route::get('/edit/{id}', [ReservationController::class, 'edit']);
         Route::post('/store', [ReservationController::class, 'store']);
         Route::post('/update', [ReservationController::class, 'update']);
+    });
+    Route::prefix('events')->group(function(){
+        Route::get('/', [EventsController::class, 'index']);
+        Route::get('/index', [EventsController::class, 'index']);
+        Route::get('/add', [EventsController::class, 'add']);
+        Route::get('/erase/{id}', [EventsController::class, 'erase']);
+        Route::get('/edit/{id}', [EventsController::class, 'edit']);
+        Route::post('/store', [EventsController::class, 'store']);
+        Route::post('/update', [EventsController::class, 'update']);
     });
 });

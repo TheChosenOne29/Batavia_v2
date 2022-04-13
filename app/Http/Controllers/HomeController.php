@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Events;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
@@ -13,6 +15,8 @@ class HomeController extends Controller
 
     public function blog()
     {
-        return view('blog');
+        return view('blog', [
+            'dataEvents'=>Events::all()
+        ]);
     }
 }
