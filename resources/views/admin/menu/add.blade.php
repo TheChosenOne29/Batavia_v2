@@ -1,7 +1,7 @@
 @extends('layouts.dash')
 
 @section('dash')
-<h1 class="mt-4">Add item</h1>
+<h1 class="mt-4">Add menu item </h1>
 
 <div class="col-lg-5">
     <form action="/admin/menu/store" method="POST">

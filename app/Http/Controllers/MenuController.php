@@ -47,7 +47,7 @@ class MenuController extends Controller
             'desc' => $request -> desc
         ]);
         
-        return redirect('/admin/menu/index');
+        return redirect('/admin/menu/add');
     }
 
     /**
