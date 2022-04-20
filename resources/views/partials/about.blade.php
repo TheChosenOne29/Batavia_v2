@@ -73,7 +73,7 @@
 							<!-- /single image -->
 
 							<!-- single image -->
-							<div class="Gallery-img" style="background-image:url(./img/image07.jpg)"></div>
+							<div class="Gallery-img" style="background-image:url(./img/image07.png)"></div>
 							<!-- /single image -->
 						</div>
 
