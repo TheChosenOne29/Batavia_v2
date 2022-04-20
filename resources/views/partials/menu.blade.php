@@ -18,10 +18,11 @@
 
 			<!-- menu nav -->
 			<ul class="menu-nav">
-				<li class="active"><a data-toggle="tab" href="#menu1">Dinner</a></li>
-				<li><a data-toggle="tab" href="#menu1">Drinks</a></li>
-				<li><a data-toggle="tab" href="#menu1">Launch</a></li>
-				<li><a data-toggle="tab" href="#menu1">Dessert</a></li>
+				<li class="active"><a data-toggle="tab" href="#menu1">Light bites</a></li>
+				<li><a data-toggle="tab" href="#menu2">Appetizer</a></li>
+				<li><a data-toggle="tab" href="#menu3">Main Course</a></li>
+				<li><a data-toggle="tab" href="#menu4">Desserts</a></li>
+				<li><a data-toggle="tab" href="#menu5">Drinks</a></li>
 			</ul>
 			<!-- /menu nav -->
 
@@ -30,116 +31,108 @@
 
 				<!-- menu1 -->
 				<div id="menu1" class="tab-pane fade in active">
-					<div class="col-md-6">
-
+					<div class="col-md-12">
+						@foreach ($dataMenu1 as $item)
+							
 						<!-- single dish -->
 						<div class="single-dish">
 							<div class="single-dish-heading">
-								<h4 class="name">Basted Rhubarb Mussels</h4>
-								<h4 class="price">57£</h4>
+								<h4 class="name">{{ $item -> name }}</h4>
+								<h4 class="price">{{ $item -> price}} ₫</h4>
 							</div>
-							<p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
+							<p>{{ $item -> desc}}</p>
 						</div>
 						<!-- /single dish -->
-
-						<!-- single dish -->
-						<div class="single-dish">
-							<div class="single-dish-heading">
-								<h4 class="name">Steamed Chili Moussaka</h4>
-								<h4 class="price">145£</h4>
-							</div>
-							<p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
-						</div>
-						<!-- /single dish -->
-
-						<!-- single dish -->
-						<div class="single-dish">
-							<div class="single-dish-heading">
-								<h4 class="name">Blanched Fennel & Orange Lasagna</h4>
-								<h4 class="price">79£</h4>
-							</div>
-							<p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
-						</div>
-						<!-- /single dish -->
-
-						<!-- single dish -->
-						<div class="single-dish">
-							<div class="single-dish-heading">
-								<h4 class="name">Slow-Cooked Basil & Lime Ostrich</h4>
-								<h4 class="price">57£</h4>
-							</div>
-							<p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
-						</div>
-						<!-- /single dish -->
-
-						<!-- single dish -->
-						<div class="single-dish">
-							<div class="single-dish-heading">
-								<h4 class="name">Stuffed Oregano Chicken</h4>
-								<h4 class="price">145£</h4>
-							</div>
-							<p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
-						</div>
-						<!-- /single dish -->
-
-					</div>
-
-					<div class="col-md-6">
-
-						<!-- single dish -->
-						<div class="single-dish">
-							<div class="single-dish-heading">
-								<h4 class="name">Pressure-Fried Asparagus Chicken</h4>
-								<h4 class="price">57£</h4>
-							</div>
-							<p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
-						</div>
-						<!-- /single dish -->
-
-						<!-- single dish -->
-						<div class="single-dish">
-							<div class="single-dish-heading">
-								<h4 class="name">Tenderized Egg & Coconut Duck</h4>
-								<h4 class="price">87£</h4>
-							</div>
-							<p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
-						</div>
-						<!-- /single dish -->
-
-						<!-- single dish -->
-						<div class="single-dish">
-							<div class="single-dish-heading">
-								<h4 class="name">Milk Chocolate Gingerbread</h4>
-								<h4 class="price">155£</h4>
-							</div>
-							<p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
-						</div>
-						<!-- /single dish -->
-
-						<!-- single dish -->
-						<div class="single-dish">
-							<div class="single-dish-heading">
-								<h4 class="name">Simmered Mango & Pine Rabbit</h4>
-								<h4 class="price">57£</h4>
-							</div>
-							<p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
-						</div>
-						<!-- /single dish -->
-
-						<!-- single dish -->
-						<div class="single-dish">
-							<div class="single-dish-heading">
-								<h4 class="name">Red Wine Surprise</h4>
-								<h4 class="price">87£</h4>
-							</div>
-							<p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
-						</div>
-						<!-- /single dish -->
-
+						
+						@endforeach
 					</div>
 
 				</div>
 				<!-- /menu1 -->
+
+				<!-- menu2 -->
+				<div id="menu2" class="tab-pane fade in active">
+					<div class="col-md-12">
+						@foreach ($dataMenu2 as $item)
+							
+						<!-- single dish -->
+						<div class="single-dish">
+							<div class="single-dish-heading">
+								<h4 class="name">{{ $item -> name }}</h4>
+								<h4 class="price">{{ $item -> price}} ₫</h4>
+							</div>
+							<p>{{ $item -> desc}}</p>
+						</div>
+						<!-- /single dish -->
+						
+						@endforeach
+					</div>
+
+				</div>
+				<!-- /menu2 -->
+
+				<!-- menu3 -->
+				<div id="menu3" class="tab-pane fade in active">
+					<div class="col-md-12">
+						@foreach ($dataMenu3 as $item)
+							
+						<!-- single dish -->
+						<div class="single-dish">
+							<div class="single-dish-heading">
+								<h4 class="name">{{ $item -> name }}</h4>
+								<h4 class="price">{{ $item -> price}} ₫</h4>
+							</div>
+							<p>{{ $item -> desc}}</p>
+						</div>
+						<!-- /single dish -->
+						
+						@endforeach
+					</div>
+
+				</div>
+				<!-- /menu3 -->
+
+				<!-- menu4 -->
+				<div id="menu4" class="tab-pane fade in active">
+					<div class="col-md-12">
+						@foreach ($dataMenu4 as $item)
+							
+						<!-- single dish -->
+						<div class="single-dish">
+							<div class="single-dish-heading">
+								<h4 class="name">{{ $item -> name }}</h4>
+								<h4 class="price">{{ $item -> price}} ₫</h4>
+							</div>
+							<p>{{ $item -> desc}}</p>
+						</div>
+						<!-- /single dish -->
+						
+						@endforeach
+					</div>
+
+				</div>
+				<!-- /menu4 -->
+
+				<!-- menu5 -->
+				<div id="menu5" class="tab-pane fade in active">
+					<div class="col-md-12">
+						@foreach ($dataMenu5 as $item)
+							
+						<!-- single dish -->
+						<div class="single-dish">
+							<div class="single-dish-heading">
+								<h4 class="name">{{ $item -> name }}</h4>
+								<h4 class="price">{{ $item -> price}} ₫</h4>
+							</div>
+							<p>{{ $item -> desc}}</p>
+						</div>
+						<!-- /single dish -->
+						
+						@endforeach
+					</div>
+
+				</div>
+				<!-- /menu5 -->
 
 			</div>
 			<!-- /menu content -->
