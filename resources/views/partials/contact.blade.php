@@ -13,10 +13,10 @@
 					<h2 class="title">Get In Touch</h2>
 				</div>
 				<div class="contact-content">
-					<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
+					<p>At Batavia, we are happy to answer any questions you might have. Simply choose from one of the options of getting in touch with us below.</p>
 					<h3>Tel: <a href="#">045-548-14-97</a></h3>
 					<p>Address: 116 P. Ngọc Hà, Ngọc Hồ, Ba Đình, Hà Nội, Vietnam</p>
-					<p>Email: <a href="#">Batavia@email.com</a></p>
+					<p>Email: <a href="#">restaurantbataviahn@gmail.com</a></p>
 					<ul class="list-inline">
 						<li><p>Follow Us:</p></li>
 						<li><a href="#"><i class="fa fa-facebook"></i></a></li>

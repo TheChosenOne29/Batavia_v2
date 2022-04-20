@@ -16,13 +16,13 @@
 
 			<!-- about content -->
 			<div class="col-md-5">
-				<h4 class="lead">Welcome to Batavia Restaurant & Cafe. Since ....</h4>
+				<h4 class="lead">Welcome to Batavia Restaurant & Cafe.</h4>
 			</div>
 			<!-- /about content -->
 
 			<!-- about content -->
 			<div class="col-md-7">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. </p>
+				<p>Batavia Restaurant & cafe is an Indonesian restaurant that established in 2016, provides Indonesian and ethnic Malay authentic food, which are guaranteed Halal, equiped with Halal certificates. Pioneered by a married couple who have settled in Hanoi, Vietnam for more than a decade. With a vision and mission to promote and popularize typical foods Indonesia and ethnic Malays, Batavia Restaurant & Cafe can be a halal hub in Hanoi, Vietnam.  </p>
 			</div>
 			<!-- /about content -->
 
