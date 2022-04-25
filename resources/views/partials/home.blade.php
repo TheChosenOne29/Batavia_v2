@@ -11,7 +11,7 @@
 			<div class="home-content">
 				<h1 class="white-text">Welcome To Batavia Restaurant & Cafe</h1>
 				<h4 class="white-text lead">An authentic Indonesian, Malay, Oriental cuisine with Halal certification.</h4>
-				<a href="index.html#menu"><button class="main-button">Discover Menu</button></a>
+				<a href="#menu"><button class="main-button">Discover Menu</button></a>
 			</div>
 		</div>
 

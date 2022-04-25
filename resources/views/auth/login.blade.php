@@ -1,69 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-  	<title>Login</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+		<title>Restaurant Batavia</title>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	<link rel="stylesheet" href="/css/logincssstyle.css">
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
 
-	</head>
-	<body>
-	<section class="ftco-section">
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Owl Carousel -->
+		<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+		<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+		{{-- Login Bootstrap --}}
+
+
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    </head>
+<body>
+	<div class="bg-image bg-parallax overlay" style="background-image:url(./img/background02.jpg)"></div>
+	<div class="section">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-md-7 col-lg-5">
-					<div class="wrap">
-						<div class="img" style="background-image: url(images/bg-1.jpg);"></div>
-						<div class="login-wrap p-4 p-md-5">
-			      	<div class="d-flex">
-			      		<div class="w-100">
-			      			<h3 class="mb-4">Sign In</h3>
-			      		</div>
-			      	</div>
-							<form action="/login" class="signin-form" method="POST">
-								@csrf
-			      		<div class="form-group mt-3">
-			      			<input type="text" class="form-control" required name="email">
-			      			<label class="form-control-placeholder" for="username">Username</label>
-			      		</div>
-		            <div class="form-group">
-		              <input id="password-field" type="password" class="form-control" required name="password">
-		              <label class="form-control-placeholder" for="password">Password</label>
-		              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-		            </div>
-		            <div class="form-group">
-		            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign In</button>
-		            </div>
-		            <div class="form-group d-md-flex">
-		            	<div class="w-50 text-left">
-			            	<label class="checkbox-wrap checkbox-primary mb-0">Remember Me
-									  <input type="checkbox" checked>
-									  <span class="checkmark"></span>
-										</label>
-									</div>
-									<div class="w-50 text-md-right">
-										<a href="#">Forgot Password</a>
-									</div>
-		            </div>
-		          </form>
-		          <p class="text-center">Not a member? <a data-toggle="tab" href="#signup">Login as Guest</a></p>
-		        </div>
-		      </div>
+				<div class="section-header text-center">
+					<form action="/login" method="POST" class="reserve-form row">
+					<h3 class="sub-title">Login to use your account</h3>
+					<h2 class="title white-text">Batavia Restaurant & Cafe</h2>
+					<div class="col-md-4 col-md-offset-4">
+						@csrf
+							<div class="form-group">
+								<label for="email">E-mail</label>
+								<input class="input" type="email" placeholder="Type your email here.." id="email" name="email" autofocus>
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input class="input" type="password" placeholder="Type your password here.." id="password" name="password">
+							</div>
+							<button type="submit" class="main-button">Login</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
-	</section>
-
-	<script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-
-	</body>
+	</div>
+</body>
 </html>
-
