@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\UserController;
@@ -58,4 +59,15 @@ Route::prefix('admin')->group(function(){
         Route::post('/store', [EventsController::class, 'store']);
         Route::post('/update', [EventsController::class, 'update']);
     });
+});
+
+Route::prefix('shop')->middleware('auth')->group(function () {
+    Route::get('/', [CartController::class, 'shop'])->name('shop');
+    Route::get('/shop', [CartController::class, 'shop'])->name('shop');
+    Route::get('/checkout', [CartController::class, 'shop'])->name('shop');
+    Route::get('/cart', [CartController::class, 'cart'])->name('cart.index');
+    Route::post('/add', [CartController::class, 'add'])->name('cart.store');
+    Route::post('/update', [CartController::class, 'update'])->name('cart.update');
+    Route::post('/remove', [CartController::class, 'remove'])->name('cart.remove');
+    Route::post('/clear', [CartController::class, 'clear'])->name('cart.clear');
 });
