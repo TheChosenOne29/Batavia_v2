@@ -91,10 +91,13 @@
 						@if (auth()->user())
 						<form action="/logout" method="POST">
 							@csrf
-							<li><button class="main-button">Logout</button></li>
+							<li><button class="main-button btn-xs">Logout</button></li>
 						</form>
+							{{-- <li><a href="/shop" class="main-button">Shop Now</a></li> --}}
 						@else
-						<li><a href="/login" class="main-button">Login</a></li>
+						<form action="/login">
+							<li><button class="main-button btn-xs">Login</button></li>
+						</form>
 						@endif
 						</ul>
 					<!-- button nav -->

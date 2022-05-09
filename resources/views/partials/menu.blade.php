@@ -14,6 +14,7 @@
 			<div class="section-header text-center">
 				<h4 class="sub-title">Discover</h4>
 				<h2 class="title white-text">Our Menu</h2>
+				<a href="/shop" class="main-button btn-lg" style="margin-bottom: 20px">Order Now!</a>
 			</div>
 
 			<!-- menu nav -->
@@ -37,10 +38,10 @@
 						<!-- single dish -->
 						<div class="single-dish">
 							<div class="single-dish-heading">
-								<h4 class="name">{{ $item -> name }}</h4>
+								<h4 class="name">{{ Str::ucfirst(Str::replace('_', ' ', $item -> name)) }}</h4>
 								<h4 class="price">{{ $item -> price}} ₫</h4>
 							</div>
-							<p>{{ $item -> desc}}</p>
+							<p>{{ Str::ucfirst(Str::replace('_', ' ', $item -> desc)) }}</p>
 						</div>
 						<!-- /single dish -->
 						
@@ -58,10 +59,10 @@
 						<!-- single dish -->
 						<div class="single-dish">
 							<div class="single-dish-heading">
-								<h4 class="name">{{ $item -> name }}</h4>
+								<h4 class="name">{{ Str::ucfirst(Str::replace('_', ' ', $item -> name)) }}</h4>
 								<h4 class="price">{{ $item -> price}} ₫</h4>
 							</div>
-							<p>{{ $item -> desc}}</p>
+							<p>{{ Str::ucfirst(Str::replace('_', ' ', $item -> desc)) }}</p>
 						</div>
 						<!-- /single dish -->
 						
@@ -79,10 +80,10 @@
 						<!-- single dish -->
 						<div class="single-dish">
 							<div class="single-dish-heading">
-								<h4 class="name">{{ $item -> name }}</h4>
+								<h4 class="name">{{ Str::ucfirst(Str::replace('_', ' ', $item -> name)) }}</h4>
 								<h4 class="price">{{ $item -> price}} ₫</h4>
 							</div>
-							<p>{{ $item -> desc}}</p>
+							<p>{{ Str::ucfirst(Str::replace('_', ' ', $item -> desc)) }}</p>
 						</div>
 						<!-- /single dish -->
 						
@@ -100,10 +101,10 @@
 						<!-- single dish -->
 						<div class="single-dish">
 							<div class="single-dish-heading">
-								<h4 class="name">{{ $item -> name }}</h4>
+								<h4 class="name">{{ Str::ucfirst(Str::replace('_', ' ', $item -> name)) }}</h4>
 								<h4 class="price">{{ $item -> price}} ₫</h4>
 							</div>
-							<p>{{ $item -> desc}}</p>
+							<p>{{ Str::ucfirst(Str::replace('_', ' ', $item -> desc)) }}</p>
 						</div>
 						<!-- /single dish -->
 						
@@ -121,10 +122,10 @@
 						<!-- single dish -->
 						<div class="single-dish">
 							<div class="single-dish-heading">
-								<h4 class="name">{{ $item -> name }}</h4>
+								<h4 class="name">{{ Str::ucfirst(Str::replace('_', ' ', $item -> name)) }}</h4>
 								<h4 class="price">{{ $item -> price}} ₫</h4>
 							</div>
-							<p>{{ $item -> desc}}</p>
+							<p>{{ Str::ucfirst(Str::replace('_', ' ', $item -> desc)) }}</p>
 						</div>
 						<!-- /single dish -->
 						

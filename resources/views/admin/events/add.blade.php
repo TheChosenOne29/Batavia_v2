@@ -17,8 +17,8 @@
         </div>
     
         <div class="mb-3">
-            <label for="form3" class="form-label">Body</label>
-            <input class="form-control" id= "form3" type="textarea" name="body">
+            <label for="form3" class="form-label">Description</label>
+            <textarea class="form-control" id="form3" rows="6" placeholder="Input event description"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
