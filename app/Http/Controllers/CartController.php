@@ -16,6 +16,23 @@ class CartController extends Controller
         return view('user.shop')->withTitle('Toko Adjie | Shop')->with(['products' => $products]);
     }
 
+    public function index()
+    {            
+        $dataMenu1 = Menu::all()->where('category', 'light_bites');
+        $dataMenu2 = Menu::all()->where('category', 'appetizer');
+        $dataMenu3 = Menu::all()->where('category', 'main_course');
+        $dataMenu4 = Menu::all()->where('category', 'desserts');
+        $dataMenu5 = Menu::all()->where('category', 'drinks');
+
+        return view('user.shop')->withTitle('Toko Adjie | Shop')->with([
+            'dataMenu1' => $dataMenu1,
+            'dataMenu2' => $dataMenu2,
+            'dataMenu3' => $dataMenu3,
+            'dataMenu4' => $dataMenu4,
+            'dataMenu5' => $dataMenu5
+        ]);
+    }
+
     public function cart()
     {
         $userId = auth()->user()->id;
@@ -66,5 +83,20 @@ class CartController extends Controller
         \Cart::session($userId)->clear();
 
         return redirect()->route('cart.index')->with('success_msg', 'Cart is cleared!');
+    }
+
+    public function checkout(Request $request)
+    {
+        $cartItems = Cart::getContent();
+        $order = new Order();
+        $order->cart = serialize($cartItems);
+        $order->user_id = Auth::user()->id;
+        $order->address_id = $request->input('address_id');
+        $order->payment_id = $request->input('payment_id');
+        $order->orderstatus_id = $request->input('orderstatus_id');
+  
+        Auth::user()->orders()->save($order);
+        Cart::clear();
+        return redirect()->route('ordersindex');
     }
 }

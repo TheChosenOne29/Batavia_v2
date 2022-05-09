@@ -62,9 +62,9 @@ Route::prefix('admin')->group(function(){
 });
 
 Route::prefix('shop')->middleware('auth')->group(function () {
-    Route::get('/', [CartController::class, 'shop'])->name('shop');
-    Route::get('/shop', [CartController::class, 'shop'])->name('shop');
-    Route::get('/checkout', [CartController::class, 'shop'])->name('shop');
+    Route::get('/', [CartController::class, 'index'])->name('shop');
+    Route::get('/shop', [CartController::class, 'index'])->name('shop');
+    Route::get('/checkout', [CartController::class, 'checkout'])->name('checkout');
     Route::get('/cart', [CartController::class, 'cart'])->name('cart.index');
     Route::post('/add', [CartController::class, 'add'])->name('cart.store');
     Route::post('/update', [CartController::class, 'update'])->name('cart.update');
