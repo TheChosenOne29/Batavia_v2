@@ -14,9 +14,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('shop') }}">Shop</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="logout">Log Out</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle"
                        href="#" role="button" data-toggle="dropdown"
@@ -33,6 +30,12 @@
                         </ul>
 
                     </div>
+                </li>
+                <li class="nav-item">
+                    <form action="/logout" method="POST">
+                        @csrf
+                        <div class="nav-link"><button class="btn-danger" type="submit">Log out</button></div>
+                    </form>
                 </li>
             </ul>
         </div>
