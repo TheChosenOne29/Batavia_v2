@@ -4,7 +4,7 @@
     <div class="container" style="margin-top: 80px">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/shop">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Shop</li>
             </ol>
         </nav>
@@ -12,7 +12,7 @@
             <div class="row" style="align-items:flex-start">
                 <div class="col-12 col-sm-3" style="position: sticky; top: 5rem;">
                     <div class="card bg-light mb-3">
-                        <div class="card-header bg-success text-white"><i class="fa fa-list"></i> Categories</div>
+                        <div class="card-header bg-success text-white"><i class="fa fa-list"></i> Sort by Categories</div>
                         <ul class="list-group category_block">
                             <li class="list-group-item"><a href="#lightbites">Light Bites</a></li>
                             <li class="list-group-item"><a href="#appetizer">Appetizer</a></li>
@@ -31,7 +31,7 @@
                         @foreach ($dataMenu1 as $pro)
                         <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 20px">
                             <div class="card">
-                                {{-- <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap"> --}}
+                                <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
                                 <div class="card-body">
                                     <h4 class="card-title">{{ Str::ucfirst(Str::replace('_', ' ', $pro -> name)) }}</h4>
                                     <p>{{ Str::ucfirst(Str::replace('_', ' ', $pro -> desc)) }}</p>

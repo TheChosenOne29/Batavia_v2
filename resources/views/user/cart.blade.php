@@ -41,19 +41,19 @@
                     <h4>{{ \Cart::getTotalQuantity()}} Product(s) In Your Cart</h4><br>
                 @else
                     <h4>No Product(s) In Your Cart</h4><br>
-                    <a href="/" class="btn btn-dark">Continue Shopping</a>
+                    <a href="/shop" class="btn btn-dark">Continue Shopping</a>
                 @endif
 
                 @foreach($cartCollection as $item)
                     <div class="row">
-                        <div class="col-lg-3">
+                        {{-- <div class="col-lg-3">
                             <img src="/images/{{ $item->attributes->image }}" class="img-thumbnail" width="200" height="200">
-                        </div>
+                        </div> --}}
                         <div class="col-lg-5">
                             <p>
-                                <b><a href="/shop/{{ $item->attributes->id }}">{{ $item->name }}</a></b><br>
-                                <b>Price: </b>Rp. {{ $item->price }}<br>
-                                <b>Sub Total: </b>Rp. {{ \Cart::get($item->id)->getPriceSum() }}<br>
+                                <b><a href="/shop/{{ $item->attributes->id }}">{{ Str::ucfirst(Str::replace('_', ' ', $item -> name)) }}</a></b><br>
+                                <b>Price: </b>₫ {{ $item->price }}<br>
+                                <b>Sub Total: </b>₫ {{ \Cart::get($item->id)->getPriceSum() }}<br>
                                 {{--                                <b>With Discount: </b>${{ \Cart::get($item->id)->getPriceSumWithConditions() }}--}}
                             </p>
                         </div>
@@ -89,7 +89,7 @@
                 <div class="col-lg-5">
                     <div class="card">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><b>Total: </b>Rp. {{ \Cart::getTotal() }}</li>
+                            <li class="list-group-item"><h4>Total : </h4>₫ {{ \Cart::getTotal() }}</li>
                         </ul>
                     </div>
                     <br><a href="/shop" class="btn btn-dark">Continue Shopping</a>
