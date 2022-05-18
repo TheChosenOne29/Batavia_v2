@@ -31,7 +31,7 @@
                         @foreach ($dataMenu1 as $pro)
                         <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 20px">
                             <div class="card">
-                                <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+                                {{-- <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap"> --}}
                                 <div class="card-body">
                                     <h4 class="card-title">{{ Str::ucfirst(Str::replace('_', ' ', $pro -> name)) }}</h4>
                                     <p>{{ Str::ucfirst(Str::replace('_', ' ', $pro -> desc)) }}</p>

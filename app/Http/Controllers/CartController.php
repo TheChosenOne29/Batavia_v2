@@ -13,7 +13,7 @@ class CartController extends Controller
     {
         $products = Menu::all();
         // dd($products);
-        return view('user.shop')->withTitle('Toko Adjie | Shop')->with(['products' => $products]);
+        return view('user.shop')->withTitle('Batavia Restaurant & Cafe')->with(['products' => $products]);
     }
 
     public function index()
@@ -24,7 +24,7 @@ class CartController extends Controller
         $dataMenu4 = Menu::all()->where('category', 'desserts');
         $dataMenu5 = Menu::all()->where('category', 'drinks');
 
-        return view('user.shop')->withTitle('Toko Adjie | Shop')->with([
+        return view('user.shop')->withTitle('Batavia Restaurant & Cafe')->with([
             'dataMenu1' => $dataMenu1,
             'dataMenu2' => $dataMenu2,
             'dataMenu3' => $dataMenu3,
@@ -38,7 +38,7 @@ class CartController extends Controller
         $userId = auth()->user()->id;
         $cartCollection = \Cart::session($userId)->getContent();
         // dd($cartCollection);
-        return view('user.cart')->withTitle('Toko Adjie | Cart')->with(['cartCollection' => $cartCollection]);
+        return view('user.cart')->withTitle('Batavia Restaurant & Cafe')->with(['cartCollection' => $cartCollection]);
     }
 
     public function add(Request $request)
